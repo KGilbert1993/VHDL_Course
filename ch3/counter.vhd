@@ -36,7 +36,7 @@ end entity load_counter;
 
 architecture behav of load_counter is
 begin
-	controller: process(clk, load) is
+	controller: process(clk, load, data_in) is
 		variable count : natural := 16;
 	begin
 		if rising_edge(clk) and load = '0' then
