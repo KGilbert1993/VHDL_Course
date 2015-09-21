@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0
+Ebus_interface
+Z0 w1442873256
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/altera/15.0/projects/bus_interface
+Z5 8C:/altera/15.0/projects/bus_interface/bus.vhd
+Z6 FC:/altera/15.0/projects/bus_interface/bus.vhd
+l0
+L5
+VR2:7N7cgW;@C69QAbMiBj0
+!s100 HfJ]]G>EKC0ifEMj`]N>?1
+Z7 OV;C;10.3d;59
+32
+Z8 !s110 1442873259
+!i10b 1
+Z9 !s108 1442873259.557000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/bus.vhd|
+Z11 !s107 C:/altera/15.0/projects/bus_interface/bus.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 NoCoverage 1
+Abus_driver
+R1
+R2
+R3
+DEx4 work 13 bus_interface 0 22 R2:7N7cgW;@C69QAbMiBj0
+l30
+L29
+VaUfZk06fz<Gj5ZW37A<o83
+!s100 ^oRWOjDm_9@:Y;eOS>RGm0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Esram
+Z14 w1442518772
+R1
+R2
+R3
+R4
+Z15 8C:/altera/15.0/projects/bus_interface/sram.vhd
+Z16 FC:/altera/15.0/projects/bus_interface/sram.vhd
+l0
+L5
+V1=DZ9;a88=2aVD:`1^5hV3
+!s100 I4BCWfCeO<kMe4OG7CnAV2
+R7
+32
+Z17 !s110 1442518775
+!i10b 1
+Z18 !s108 1442518775.096000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/sram.vhd|
+Z20 !s107 C:/altera/15.0/projects/bus_interface/sram.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 4 sram 0 22 1=DZ9;a88=2aVD:`1^5hV3
+l29
+L21
+VbR<`Ca7O2_ZO5>ea>]K3e2
+!s100 Xgj5U3K1SHcjiACSY[LCa2
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
