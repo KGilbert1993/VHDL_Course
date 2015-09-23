@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/altera/15.0
 Ebus_interface
-Z0 w1442873256
+Z0 w1443040347
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VR2:7N7cgW;@C69QAbMiBj0
 !s100 HfJ]]G>EKC0ifEMj`]N>?1
 Z7 OV;C;10.3d;59
 32
-Z8 !s110 1442873259
+Z8 !s110 1443040354
 !i10b 1
-Z9 !s108 1442873259.557000
+Z9 !s108 1443040354.826000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/bus.vhd|
 Z11 !s107 C:/altera/15.0/projects/bus_interface/bus.vhd|
 !i113 1
@@ -34,11 +34,11 @@ Abus_driver
 R1
 R2
 R3
-DEx4 work 13 bus_interface 0 22 R2:7N7cgW;@C69QAbMiBj0
-l30
+Z14 DEx4 work 13 bus_interface 0 22 R2:7N7cgW;@C69QAbMiBj0
+l31
 L29
-VaUfZk06fz<Gj5ZW37A<o83
-!s100 ^oRWOjDm_9@:Y;eOS>RGm0
+VI^Qh<H`P3K82K3c1RJI5Z2
+!s100 6dSVNn_gf<KCGFYSBRM<C1
 R7
 32
 R8
@@ -50,24 +50,24 @@ R11
 R12
 R13
 Esram
-Z14 w1442518772
+Z15 w1442600629
 R1
 R2
 R3
 R4
-Z15 8C:/altera/15.0/projects/bus_interface/sram.vhd
-Z16 FC:/altera/15.0/projects/bus_interface/sram.vhd
+Z16 8C:/altera/15.0/projects/bus_interface/sram.vhd
+Z17 FC:/altera/15.0/projects/bus_interface/sram.vhd
 l0
 L5
-V1=DZ9;a88=2aVD:`1^5hV3
-!s100 I4BCWfCeO<kMe4OG7CnAV2
+V=J91N]Be[ak_0I`cN>Pgz1
+!s100 jgb:4_EQl8Ce^OYFTD]bo1
 R7
 32
-Z17 !s110 1442518775
+Z18 !s110 1443039719
 !i10b 1
-Z18 !s108 1442518775.096000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/sram.vhd|
-Z20 !s107 C:/altera/15.0/projects/bus_interface/sram.vhd|
+Z19 !s108 1443039719.878000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/sram.vhd|
+Z21 !s107 C:/altera/15.0/projects/bus_interface/sram.vhd|
 !i113 1
 R12
 R13
@@ -75,18 +75,61 @@ Artl
 R1
 R2
 R3
-DEx4 work 4 sram 0 22 1=DZ9;a88=2aVD:`1^5hV3
+Z22 DEx4 work 4 sram 0 22 =J91N]Be[ak_0I`cN>Pgz1
 l29
 L21
 VbR<`Ca7O2_ZO5>ea>]K3e2
 !s100 Xgj5U3K1SHcjiACSY[LCa2
 R7
 32
-R17
-!i10b 1
 R18
+!i10b 1
 R19
 R20
+R21
+!i113 1
+R12
+R13
+Etestbench
+Z23 w1443039671
+R1
+R2
+R3
+R4
+Z24 8C:/altera/15.0/projects/bus_interface/testbench.vhd
+Z25 FC:/altera/15.0/projects/bus_interface/testbench.vhd
+l0
+L5
+VglIVDWdT;ib[PGNa;XXo@3
+!s100 ecLS3[O?W><>Nk<WXNLGo1
+R7
+32
+Z26 !s110 1443039720
+!i10b 1
+Z27 !s108 1443039720.532000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/projects/bus_interface/testbench.vhd|
+Z29 !s107 C:/altera/15.0/projects/bus_interface/testbench.vhd|
+!i113 1
+R12
+R13
+Atest
+R22
+R14
+R1
+R2
+R3
+DEx4 work 9 testbench 0 22 glIVDWdT;ib[PGNa;XXo@3
+l20
+L8
+VSE76dN0GW@W2O9ALd[nC91
+!s100 e79]g;7X6KV>O:ecj;Ee52
+R7
+32
+R26
+!i10b 1
+R27
+R28
+R29
 !i113 1
 R12
 R13

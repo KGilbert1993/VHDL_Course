@@ -27,20 +27,22 @@ entity bus_interface is
 end entity bus_interface;
 
 architecture bus_driver of bus_interface is
+	signal debug_reg : std_logic_vector(7 downto 0);
 begin
+	LED <= debug_reg(0);
 	proc: process(bClk) is
 	begin
 		if rising_edge(bClk) then
+			sAddress(11 downto 0) <= bAddress(11 downto 0);	
 			if bWt = '1' then
 				sWrite <= true; 
+				sDataIn(7 downto 0) <= bData(7 downto 0);
 			else 
 				sWrite <= false;
+				bData(7 downto 0) <= sDataOut(7 downto 0);
 			end if;
-			sAddress <= bAddress;	
-			if bWt = '1' then
-				sDataIn <= bData;
-			else
-				bData <= sDataOut;
+			if bAddress = 1024 then
+				debug_reg <= bData;
 			end if;
 		end if;	
 	end process proc;
