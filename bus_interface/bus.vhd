@@ -30,6 +30,8 @@ architecture bus_driver of bus_interface is
 	signal debug_reg : std_logic_vector(7 downto 0);
 begin
 	LED <= debug_reg(0);
+	sAddress(kAddressLength - 1 downto 12) <= to_unsigned(0, kAddressLength-12);	-- Unused memory, pull to ground
+	sDataIn(kDataLength - 1 downto 8) <= std_logic_vector(to_unsigned(0,kDataLength-8));
 	proc: process(bClk) is
 	begin
 		if rising_edge(bClk) then
