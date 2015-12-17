@@ -32,22 +32,29 @@ begin
 	LED <= debug_reg(0);
 	sAddress(kAddressLength - 1 downto 12) <= to_unsigned(0, kAddressLength-12);	-- Unused memory, pull to ground
 	sDataIn(kDataLength - 1 downto 8) <= std_logic_vector(to_unsigned(0,kDataLength-8));
-	proc: process(bClk) is
-	begin
-		if rising_edge(bClk) then
-			sAddress(11 downto 0) <= bAddress(11 downto 0);	
-			if bWt = '1' then
-				sWrite <= true; 
-				sDataIn(7 downto 0) <= bData(7 downto 0);
-			else 
-				sWrite <= false;
-				bData(7 downto 0) <= sDataOut(7 downto 0);
-			end if;
-			if bAddress = 1024 then
-				debug_reg <= bData;
-			end if;
-		end if;	
-	end process proc;
+
+	sAddress(11 downto 0) <= bAddress(11 downto 0);
+	sWrite <= true when bWt = '1' else false;
+	bData(7 downto 0) <= sDataOut(7 downto 0) when bRd = '1' else "ZZZZZZZZ";
+	sDataIn(7 downto 0) <= bData(7 downto 0) when bWt = '1';
+	debug_reg <= bData when bAddress = 1024;
+
+--	proc: process is
+--	begin
+--		sAddress(11 downto 0) <= bAddress(11 downto 0);	
+--		if bWt = '1' then
+--			sWrite <= true; 
+--			sDataIn(7 downto 0) <= bData(7 downto 0);
+--			bData(7 downto 0) <= "ZZZZZZZZ";
+--		else 
+--			sWrite <= false;
+--			bData(7 downto 0) <= sDataOut(7 downto 0);
+--		end if;
+--		if bAddress = 1024 then
+--			debug_reg <= bData;
+--		end if;	
+--		wait;
+--	end process proc;
 end architecture bus_driver;
 
 
